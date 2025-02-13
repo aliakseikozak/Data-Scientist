@@ -145,20 +145,3 @@ class DataVisualizer:
         except Exception as e:
             print(f"Ошибка построения диаграммы рассеяния: {e}")
             return None
-
-loader = DataLoader()
-file_csv = 'C:/Users/a.kozak/Documents/dz2/car_price_dataset.csv'
-df = loader.load_csv(file_csv)   
-# Отчет о пропущенных значениях
-print(loader.count_missing_values(df))
-print(loader.report_missing_values(df))
-
-
-# Заполнение пропущенных значений
-filled_df = loader.fill_missing_values(df, method='mean', file_path=file_csv)
-
-# Визуализация данных
-visualizer = DataVisualizer(filled_df)
-visualizer.add_histogram('Price', 20, 0.9)
-visualizer.add_line_plot('Year', 'Brand', 'Price')
-visualizer.add_scatter_plot('Year', 'Price')
