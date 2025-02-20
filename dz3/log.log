@@ -1,0 +1,328 @@
+2025-02-20 20:45:17,315 INFO 737140239 Started modul CheckData
+2025-02-20 20:47:49,380 INFO 3688864535 Started modul CheckData
+2025-02-20 20:47:58,657 INFO 2659142034 Started modul CheckData
+2025-02-20 20:49:50,622 ERROR 2120509242 Ошибка подключения к БД: connection to server at "192.168.1.196", port 5432 failed: FATAL:  password authentication failed for user "dwhadmin"
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Temp\ipykernel_27656\2120509242.py", line 16, in <module>
+    conn = psycopg2.connect(dbname="car_price_db", host="192.168.1.196", user="dwhadmin", password="1234", port="5432")
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "192.168.1.196", port 5432 failed: FATAL:  password authentication failed for user "dwhadmin"
+
+2025-02-20 20:52:03,795 INFO 3682749794 Подключение установлено
+2025-02-20 20:52:25,859 ERROR 4098649160 Ошибка подключения к БД: connection to server at "192.168.1.196", port 5432 failed: FATAL:  password authentication failed for user "dwhadmin"
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Temp\ipykernel_2900\4098649160.py", line 16, in <module>
+    conn = psycopg2.connect(dbname="car_price_db", host="192.168.1.196", user="dwhadmin", password="1234", port="5432")
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "192.168.1.196", port 5432 failed: FATAL:  password authentication failed for user "dwhadmin"
+
+2025-02-20 20:52:25,860 INFO 4098649160 Подключение установлено
+2025-02-20 20:52:51,050 INFO 3682749794 Подключение установлено
+2025-02-20 21:32:40,610 INFO data_visualizer Started modul DataVisualizer
+2025-02-20 21:40:03,273 ERROR data_visualizer Ошибка построения гистрограммы: 'Price'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 15, in add_histogram
+    plt.hist(self.df[column].dropna(), bins=bins, alpha=alpha, color='blue', edgecolor='black')
+             ~~~~~~~^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Price'
+2025-02-20 21:40:54,159 ERROR data_visualizer Ошибка построения гистрограммы: 'Price'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 15, in add_histogram
+    plt.hist(self.df[column].dropna(), bins=bins, alpha=alpha, color='blue', edgecolor='black')
+             ~~~~~~~^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Price'
+2025-02-20 21:44:05,679 ERROR data_visualizer Ошибка построения гистрограммы: 'Price'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 15, in add_histogram
+    plt.hist(self.df[column].dropna(), bins=bins, alpha=alpha, color='blue', edgecolor='black')
+             ~~~~~~~^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Price'
+2025-02-20 21:45:20,313 ERROR data_visualizer Ошибка построения гистрограммы: 'Price'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 15, in add_histogram
+    plt.hist(self.df[column].dropna(), bins=bins, alpha=alpha, color='blue', edgecolor='black')
+             ~~~~~~~^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Price'
+2025-02-20 21:45:56,377 ERROR data_visualizer Ошибка построения гистрограммы: 'Price'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 15, in add_histogram
+    plt.hist(self.df[column].dropna(), bins=bins, alpha=alpha, color='blue', edgecolor='black')
+             ~~~~~~~^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Price'
+2025-02-20 21:46:07,156 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 21:46:23,269 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 21:46:46,776 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 21:47:09,271 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 21:48:12,629 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 21:49:13,183 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 21:50:56,806 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 21:50:57,177 ERROR data_visualizer Ошибка построения линейного графика: 'year'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'year'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 31, in add_line_plot
+    plt.scatter(self.df[x_column], self.df[y_column], c=self.df[color_column], cmap='viridis', marker='o')
+                ~~~~~~~^^^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'year'
+2025-02-20 21:51:13,543 ERROR data_visualizer Ошибка построения линейного графика: 'year'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'year'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 31, in add_line_plot
+    plt.scatter(self.df[x_column], self.df[y_column], c=self.df[color_column], cmap='viridis', marker='o')
+                ~~~~~~~^^^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'year'
+2025-02-20 21:51:38,899 ERROR data_visualizer Ошибка построения линейного графика: 'year'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'year'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 31, in add_line_plot
+    plt.scatter(self.df[x_column], self.df[y_column], c=self.df[color_column], cmap='viridis', marker='o')
+                ~~~~~~~^^^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'year'
+2025-02-20 21:52:02,011 ERROR data_visualizer Ошибка построения линейного графика: 'Brand'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Brand'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 31, in add_line_plot
+    plt.scatter(self.df[x_column], self.df[y_column], c=self.df[color_column], cmap='viridis', marker='o')
+                                   ~~~~~~~^^^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Brand'
+2025-02-20 21:53:14,799 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:53:49,579 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:54:07,627 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:54:24,532 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:54:36,056 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:54:46,836 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:55:18,261 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:55:52,982 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:56:23,325 ERROR data_visualizer Ошибка построения линейного графика: 'brand'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'brand'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 33, in add_line_plot
+    plt.plot(self.df[x_column], self.df[y_column], marker='o')
+             ~~~~~~~^^^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'brand'
+2025-02-20 21:59:14,670 INFO data_visualizer Линейный график успешно построен
+2025-02-20 21:59:48,839 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:00:05,913 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:00:47,898 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:01:26,402 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:01:42,814 ERROR data_visualizer Ошибка построения линейного графика: 'Brand'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Brand'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 31, in add_line_plot
+    plt.scatter(self.df[x_column], self.df[y_column], c=self.df[color_column], cmap='viridis', marker='o')
+                                   ~~~~~~~^^^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Brand'
+2025-02-20 22:01:55,014 ERROR data_visualizer Ошибка построения линейного графика: 'Brand'
+Traceback (most recent call last):
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Brand'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\git\Data-Scientist\dz3\data_visualizer.py", line 31, in add_line_plot
+    plt.scatter(self.df[x_column], self.df[y_column], c=self.df[color_column], cmap='viridis', marker='o')
+                                   ~~~~~~~^^^^^^^^^^
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\a.kozak\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Brand'
+2025-02-20 22:02:05,077 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:02:57,379 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:03:15,405 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:04:51,410 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:05:09,335 INFO data_visualizer Started modul DataVisualizer
+2025-02-20 22:05:09,609 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:05:24,533 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:05:24,680 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:06:35,919 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:06:36,069 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:06:36,399 INFO data_visualizer Диаграмма рассеяния успешно построен
+2025-02-20 22:06:57,431 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:06:57,568 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:06:57,679 INFO data_visualizer Диаграмма рассеяния успешно построен
+2025-02-20 22:07:30,896 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:07:31,171 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:07:31,852 INFO data_visualizer Диаграмма рассеяния успешно построен
+2025-02-20 22:11:25,929 INFO data_visualizer Started modul DataVisualizer
+2025-02-20 22:11:26,418 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:11:26,570 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:11:26,776 INFO data_visualizer Диаграмма рассеяния успешно построен
