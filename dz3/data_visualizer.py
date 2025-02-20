@@ -32,7 +32,7 @@ class DataVisualizer:
             else:
                 plt.plot(self.df[x_column], self.df[y_column], marker='o')
             
-            plt.title(f'Линейный график: Стоимость автомобилей по годам (в цветовой гамме)')
+            plt.title(f'Линейный график: Количество выпущенных автомобилей по годам')
             plt.xlabel('Количество выпущенных автомобилей')
             plt.ylabel('Год выпуска')
             plt.grid()

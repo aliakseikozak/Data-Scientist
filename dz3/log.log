@@ -326,3 +326,14 @@ KeyError: 'Brand'
 2025-02-20 22:11:26,418 INFO data_visualizer График гистограммы успешно построен
 2025-02-20 22:11:26,570 INFO data_visualizer Линейный график успешно построен
 2025-02-20 22:11:26,776 INFO data_visualizer Диаграмма рассеяния успешно построен
+2025-02-20 22:23:14,908 INFO data_visualizer Started modul DataVisualizer
+2025-02-20 22:23:15,398 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:23:15,583 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:23:15,864 INFO data_visualizer Диаграмма рассеяния успешно построен
+2025-02-20 22:24:48,903 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:24:49,077 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:24:49,350 INFO data_visualizer Диаграмма рассеяния успешно построен
+2025-02-20 22:25:02,267 INFO data_visualizer Started modul DataVisualizer
+2025-02-20 22:25:02,692 INFO data_visualizer График гистограммы успешно построен
+2025-02-20 22:25:02,801 INFO data_visualizer Линейный график успешно построен
+2025-02-20 22:25:02,982 INFO data_visualizer Диаграмма рассеяния успешно построен
