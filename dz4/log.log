@@ -1,0 +1,750 @@
+2025-03-03 19:18:23,799 INFO data_loader Started modul DataLoader
+2025-03-03 19:18:24,815 INFO data_loader Данные успешно загружены
+2025-03-03 19:18:54,321 INFO 1468180195 Датасет успешно сохранен в файл: filtered_results.xlsx
+2025-03-03 19:18:59,585 INFO match_predictor Начало предсказания исхода матча.
+2025-03-03 19:18:59,585 INFO match_predictor Проверяем данные для команды: Turkey, Hungary
+2025-03-03 19:18:59,597 INFO match_predictor Данные для домашней команды:              date    home_team   away_team  home_score  away_score  \
+38539  2015-03-28  Netherlands      Turkey           1           1   
+38583  2015-03-31   Luxembourg      Turkey           1           2   
+38688  2015-06-08       Turkey    Bulgaria           4           0   
+38728  2015-06-12   Kazakhstan      Turkey           0           1   
+38968  2015-09-03       Turkey      Latvia           1           1   
+...           ...          ...         ...         ...         ...   
+47562  2024-09-09       Turkey     Iceland           3           1   
+47689  2024-10-11       Turkey  Montenegro           1           0   
+47745  2024-10-14      Iceland      Turkey           2           4   
+47861  2024-11-16       Turkey       Wales           0           0   
+47908  2024-11-19   Montenegro      Turkey           3           1   
+
+                    tournament        city      country  neutral  \
+38539  UEFA Euro qualification   Amsterdam  Netherlands    False   
+38583                 Friendly  Luxembourg   Luxembourg    False   
+38688                 Friendly    Istanbul       Turkey    False   
+38728  UEFA Euro qualification      Almaty   Kazakhstan    False   
+38968  UEFA Euro qualification       Konya       Turkey    False   
+...                        ...         ...          ...      ...   
+47562      UEFA Nations League       Izmir       Turkey    False   
+47689      UEFA Nations League    Tekkek\xf6y       Turkey    False   
+47745      UEFA Nations League   Reykjav\xedk      Iceland    False   
+47861      UEFA Nations League     Kayseri       Turkey    False   
+47908      UEFA Nations League   Podgorica   Montenegro    False   
+
+       home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38539                 1.00  ...                1.000000      draw   
+38583                 1.00  ...                1.500000  away_win   
+38688                 4.00  ...                0.000000  home_win   
+38728                 0.25  ...                1.333333  away_win   
+38968                 2.50  ...                1.000000      draw   
+...                    ...  ...                     ...       ...   
+47562                 2.20  ...                1.300000  home_win   
+47689                 2.20  ...                0.800000  home_win   
+47745                 2.20  ...                1.200000  away_win   
+47861                 1.40  ...                0.900000      draw   
+47908                 1.20  ...                1.200000  home_win   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38539             0.0              0.0             0.0               0.0   
+38583             0.0              1.0             1.0               0.0   
+38688             1.0              0.0             0.0               1.0   
+38728             0.0              2.0             2.0               0.0   
+38968             1.0              0.0             0.0               0.0   
+...               ...              ...             ...               ...   
+47562             3.0              1.0             2.0               3.0   
+47689             4.0              1.0             0.0               5.0   
+47745             2.0              1.0             3.0               1.0   
+47861             3.0              1.0             1.0               1.0   
+47908             2.0              3.0             2.0               2.0   
+
+                                 last_5_results  last_5_home_wins  \
+38539                    home_win,home_win,draw                 2   
+38583                         away_win,away_win                 0   
+38688                                  home_win                 1   
+38728                                  away_win                 0   
+38968                        home_win,draw,draw                 1   
+...                                         ...               ...   
+47562  home_win,draw,away_win,away_win,away_win                 1   
+47689      home_win,home_win,draw,draw,home_win                 3   
+47745  away_win,away_win,draw,home_win,home_win                 2   
+47861          draw,draw,draw,home_win,away_win                 1   
+47908      home_win,away_win,away_win,draw,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38539                0             1  
+38583                2             0  
+38688                0             0  
+38728                1             0  
+38968                0             2  
+...                ...           ...  
+47562                3             1  
+47689                0             2  
+47745                2             1  
+47861                1             3  
+47908                2             2  
+
+[115 rows x 22 columns]
+2025-03-03 19:18:59,606 INFO match_predictor Данные для гостевой команды:              date               home_team               away_team  home_score  \
+38551  2015-03-29                 Hungary                  Greece           0   
+38655  2015-06-05                 Hungary               Lithuania           4   
+38747  2015-06-13                 Finland                 Hungary           0   
+38981  2015-09-04                 Hungary                 Romania           0   
+39043  2015-09-07        Northern Ireland                 Hungary           1   
+...           ...                     ...                     ...         ...   
+47595  2024-09-10                 Hungary  Bosnia and Herzegovina           0   
+47685  2024-10-11                 Hungary             Netherlands           1   
+47741  2024-10-14  Bosnia and Herzegovina                 Hungary           0   
+47857  2024-11-16             Netherlands                 Hungary           4   
+47904  2024-11-19                 Hungary                 Germany           1   
+
+       away_score               tournament       city                 country  \
+38551           0  UEFA Euro qualification   Budapest                 Hungary   
+38655           0                 Friendly   Debrecen                 Hungary   
+38747           1  UEFA Euro qualification   Helsinki                 Finland   
+38981           0  UEFA Euro qualification   Budapest                 Hungary   
+39043           1  UEFA Euro qualification    Belfast        Northern Ireland   
+...           ...                      ...        ...                     ...   
+47595           0      UEFA Nations League   Budapest                 Hungary   
+47685           1      UEFA Nations League   Budapest                 Hungary   
+47741           2      UEFA Nations League     Zenica  Bosnia and Herzegovina   
+47857           0      UEFA Nations League  Amsterdam             Netherlands   
+47904           1      UEFA Nations League   Budapest                 Hungary   
+
+       neutral  home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38551    False             0.000000  ...                     0.0      draw   
+38655    False             2.000000  ...                     0.0  home_win   
+38747    False             0.333333  ...                     1.0  away_win   
+38981    False             1.333333  ...                     0.0      draw   
+39043    False             1.000000  ...                     1.0      draw   
+...        ...                  ...  ...                     ...       ...   
+47595    False             1.400000  ...                     0.6      draw   
+47685    False             1.400000  ...                     2.0      draw   
+47741    False             0.600000  ...                     1.2  away_win   
+47857    False             2.800000  ...                     1.0  home_win   
+47904    False             1.200000  ...                     1.7      draw   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38551             0.0              0.0             0.0               0.0   
+38655             1.0              0.0             0.0               2.0   
+38747             1.0              2.0             1.0               0.0   
+38981             1.0              0.0             0.0               0.0   
+39043             1.0              0.0             1.0               0.0   
+...               ...              ...             ...               ...   
+47595             3.0              1.0             0.0               4.0   
+47685             2.0              1.0             3.0               1.0   
+47741             0.0              5.0             2.0               3.0   
+47857             3.0              1.0             2.0               3.0   
+47904             1.0              1.0             2.0               1.0   
+
+                             last_5_results  last_5_home_wins  \
+38551                home_win,home_win,draw                 2   
+38655                     home_win,home_win                 2   
+38747                     home_win,away_win                 1   
+38981                                  draw                 0   
+39043                         away_win,draw                 0   
+...                                     ...               ...   
+47595                                  draw                 0   
+47685                                  draw                 0   
+47741                         away_win,draw                 0   
+47857                         home_win,draw                 1   
+47904  draw,away_win,away_win,home_win,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38551                0             1  
+38655                0             0  
+38747                1             0  
+38981                0             1  
+39043                1             1  
+...                ...           ...  
+47595                0             1  
+47685                0             1  
+47741                1             1  
+47857                0             1  
+47904                2             2  
+
+[105 rows x 22 columns]
+2025-03-03 19:18:59,606 INFO match_predictor Средние голы домашней команды: 1.5739130434782609
+2025-03-03 19:18:59,606 INFO match_predictor Средние голы гостевой команды: 1.1333333333333333
+2025-03-03 19:18:59,607 INFO match_predictor Средние голы домашней команды за последние 10 матчей: 1.3
+2025-03-03 19:18:59,607 INFO match_predictor Средние голы гостевой команды за последние 10 матчей: 0.8
+2025-03-03 19:18:59,611 INFO match_predictor Результаты последних 5 матчей между Turkey и Hungary: ['away_win', 'away_win', 'away_win']
+2025-03-03 19:18:59,611 INFO match_predictor Победы домашней команды в последних 5 матчах: 0
+2025-03-03 19:18:59,611 INFO match_predictor Победы гостевой команды в последних 5 матчах: 3
+2025-03-03 19:18:59,611 INFO match_predictor Ничьи в последних 5 матчах: 0
+2025-03-03 19:18:59,613 INFO match_predictor Создан новый DataFrame с данными: {'home_team': ['Turkey'], 'away_team': ['Hungary'], 'tournament': ['UEFA Nations League'], 'city': ['Istanbul'], 'country': ['Turkey'], 'neutral': [False], 'home_team_avg_goals': [np.float64(1.5739130434782609)], 'away_team_avg_goals': [np.float64(1.1333333333333333)], 'home_team_avg_goals_10': [np.float64(1.3)], 'away_team_avg_goals_10': [np.float64(0.8)], 'home_team_wins': [np.float64(3.0)], 'home_team_losses': [np.float64(1.0)], 'away_team_wins': [np.float64(1.0)], 'away_team_losses': [np.float64(1.0)], 'last_5_home_wins': [0], 'last_5_away_wins': [3], 'last_5_draws': [0], 'year': [2025], 'month': [3], 'day': [20]}
+2025-03-03 19:18:59,617 INFO match_predictor Ожидаемые признаки модели: ['home_team' 'away_team' 'tournament' 'city' 'country' 'neutral'
+ 'home_team_wins' 'home_team_losses' 'away_team_wins' 'away_team_losses'
+ 'home_team_avg_goals' 'away_team_avg_goals' 'home_team_avg_goals_10'
+ 'away_team_avg_goals_10' 'last_5_home_wins' 'last_5_away_wins'
+ 'last_5_draws']
+2025-03-03 19:18:59,619 INFO match_predictor Предсказанное значение: away_win
+2025-03-03 19:19:03,026 INFO match_predictor Начало предсказания исхода матча.
+2025-03-03 19:19:03,027 INFO match_predictor Проверяем данные для команды: Turkey, Hungary
+2025-03-03 19:19:03,034 INFO match_predictor Данные для домашней команды:              date    home_team   away_team  home_score  away_score  \
+38539  2015-03-28  Netherlands      Turkey           1           1   
+38583  2015-03-31   Luxembourg      Turkey           1           2   
+38688  2015-06-08       Turkey    Bulgaria           4           0   
+38728  2015-06-12   Kazakhstan      Turkey           0           1   
+38968  2015-09-03       Turkey      Latvia           1           1   
+...           ...          ...         ...         ...         ...   
+47562  2024-09-09       Turkey     Iceland           3           1   
+47689  2024-10-11       Turkey  Montenegro           1           0   
+47745  2024-10-14      Iceland      Turkey           2           4   
+47861  2024-11-16       Turkey       Wales           0           0   
+47908  2024-11-19   Montenegro      Turkey           3           1   
+
+                    tournament        city      country  neutral  \
+38539  UEFA Euro qualification   Amsterdam  Netherlands    False   
+38583                 Friendly  Luxembourg   Luxembourg    False   
+38688                 Friendly    Istanbul       Turkey    False   
+38728  UEFA Euro qualification      Almaty   Kazakhstan    False   
+38968  UEFA Euro qualification       Konya       Turkey    False   
+...                        ...         ...          ...      ...   
+47562      UEFA Nations League       Izmir       Turkey    False   
+47689      UEFA Nations League    Tekkek\xf6y       Turkey    False   
+47745      UEFA Nations League   Reykjav\xedk      Iceland    False   
+47861      UEFA Nations League     Kayseri       Turkey    False   
+47908      UEFA Nations League   Podgorica   Montenegro    False   
+
+       home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38539                 1.00  ...                1.000000      draw   
+38583                 1.00  ...                1.500000  away_win   
+38688                 4.00  ...                0.000000  home_win   
+38728                 0.25  ...                1.333333  away_win   
+38968                 2.50  ...                1.000000      draw   
+...                    ...  ...                     ...       ...   
+47562                 2.20  ...                1.300000  home_win   
+47689                 2.20  ...                0.800000  home_win   
+47745                 2.20  ...                1.200000  away_win   
+47861                 1.40  ...                0.900000      draw   
+47908                 1.20  ...                1.200000  home_win   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38539             0.0              0.0             0.0               0.0   
+38583             0.0              1.0             1.0               0.0   
+38688             1.0              0.0             0.0               1.0   
+38728             0.0              2.0             2.0               0.0   
+38968             1.0              0.0             0.0               0.0   
+...               ...              ...             ...               ...   
+47562             3.0              1.0             2.0               3.0   
+47689             4.0              1.0             0.0               5.0   
+47745             2.0              1.0             3.0               1.0   
+47861             3.0              1.0             1.0               1.0   
+47908             2.0              3.0             2.0               2.0   
+
+                                 last_5_results  last_5_home_wins  \
+38539                    home_win,home_win,draw                 2   
+38583                         away_win,away_win                 0   
+38688                                  home_win                 1   
+38728                                  away_win                 0   
+38968                        home_win,draw,draw                 1   
+...                                         ...               ...   
+47562  home_win,draw,away_win,away_win,away_win                 1   
+47689      home_win,home_win,draw,draw,home_win                 3   
+47745  away_win,away_win,draw,home_win,home_win                 2   
+47861          draw,draw,draw,home_win,away_win                 1   
+47908      home_win,away_win,away_win,draw,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38539                0             1  
+38583                2             0  
+38688                0             0  
+38728                1             0  
+38968                0             2  
+...                ...           ...  
+47562                3             1  
+47689                0             2  
+47745                2             1  
+47861                1             3  
+47908                2             2  
+
+[115 rows x 22 columns]
+2025-03-03 19:19:03,039 INFO match_predictor Данные для гостевой команды:              date               home_team               away_team  home_score  \
+38551  2015-03-29                 Hungary                  Greece           0   
+38655  2015-06-05                 Hungary               Lithuania           4   
+38747  2015-06-13                 Finland                 Hungary           0   
+38981  2015-09-04                 Hungary                 Romania           0   
+39043  2015-09-07        Northern Ireland                 Hungary           1   
+...           ...                     ...                     ...         ...   
+47595  2024-09-10                 Hungary  Bosnia and Herzegovina           0   
+47685  2024-10-11                 Hungary             Netherlands           1   
+47741  2024-10-14  Bosnia and Herzegovina                 Hungary           0   
+47857  2024-11-16             Netherlands                 Hungary           4   
+47904  2024-11-19                 Hungary                 Germany           1   
+
+       away_score               tournament       city                 country  \
+38551           0  UEFA Euro qualification   Budapest                 Hungary   
+38655           0                 Friendly   Debrecen                 Hungary   
+38747           1  UEFA Euro qualification   Helsinki                 Finland   
+38981           0  UEFA Euro qualification   Budapest                 Hungary   
+39043           1  UEFA Euro qualification    Belfast        Northern Ireland   
+...           ...                      ...        ...                     ...   
+47595           0      UEFA Nations League   Budapest                 Hungary   
+47685           1      UEFA Nations League   Budapest                 Hungary   
+47741           2      UEFA Nations League     Zenica  Bosnia and Herzegovina   
+47857           0      UEFA Nations League  Amsterdam             Netherlands   
+47904           1      UEFA Nations League   Budapest                 Hungary   
+
+       neutral  home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38551    False             0.000000  ...                     0.0      draw   
+38655    False             2.000000  ...                     0.0  home_win   
+38747    False             0.333333  ...                     1.0  away_win   
+38981    False             1.333333  ...                     0.0      draw   
+39043    False             1.000000  ...                     1.0      draw   
+...        ...                  ...  ...                     ...       ...   
+47595    False             1.400000  ...                     0.6      draw   
+47685    False             1.400000  ...                     2.0      draw   
+47741    False             0.600000  ...                     1.2  away_win   
+47857    False             2.800000  ...                     1.0  home_win   
+47904    False             1.200000  ...                     1.7      draw   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38551             0.0              0.0             0.0               0.0   
+38655             1.0              0.0             0.0               2.0   
+38747             1.0              2.0             1.0               0.0   
+38981             1.0              0.0             0.0               0.0   
+39043             1.0              0.0             1.0               0.0   
+...               ...              ...             ...               ...   
+47595             3.0              1.0             0.0               4.0   
+47685             2.0              1.0             3.0               1.0   
+47741             0.0              5.0             2.0               3.0   
+47857             3.0              1.0             2.0               3.0   
+47904             1.0              1.0             2.0               1.0   
+
+                             last_5_results  last_5_home_wins  \
+38551                home_win,home_win,draw                 2   
+38655                     home_win,home_win                 2   
+38747                     home_win,away_win                 1   
+38981                                  draw                 0   
+39043                         away_win,draw                 0   
+...                                     ...               ...   
+47595                                  draw                 0   
+47685                                  draw                 0   
+47741                         away_win,draw                 0   
+47857                         home_win,draw                 1   
+47904  draw,away_win,away_win,home_win,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38551                0             1  
+38655                0             0  
+38747                1             0  
+38981                0             1  
+39043                1             1  
+...                ...           ...  
+47595                0             1  
+47685                0             1  
+47741                1             1  
+47857                0             1  
+47904                2             2  
+
+[105 rows x 22 columns]
+2025-03-03 19:19:03,039 INFO match_predictor Средние голы домашней команды: 1.5739130434782609
+2025-03-03 19:19:03,039 INFO match_predictor Средние голы гостевой команды: 1.1333333333333333
+2025-03-03 19:19:03,040 INFO match_predictor Средние голы домашней команды за последние 10 матчей: 1.3
+2025-03-03 19:19:03,040 INFO match_predictor Средние голы гостевой команды за последние 10 матчей: 0.8
+2025-03-03 19:19:03,044 INFO match_predictor Результаты последних 5 матчей между Turkey и Hungary: ['away_win', 'away_win', 'away_win']
+2025-03-03 19:19:03,044 INFO match_predictor Победы домашней команды в последних 5 матчах: 0
+2025-03-03 19:19:03,044 INFO match_predictor Победы гостевой команды в последних 5 матчах: 3
+2025-03-03 19:19:03,044 INFO match_predictor Ничьи в последних 5 матчах: 0
+2025-03-03 19:19:03,045 INFO match_predictor Создан новый DataFrame с данными: {'home_team': ['Turkey'], 'away_team': ['Hungary'], 'tournament': ['UEFA Nations League'], 'city': ['Istanbul'], 'country': ['Turkey'], 'neutral': [False], 'home_team_avg_goals': [np.float64(1.5739130434782609)], 'away_team_avg_goals': [np.float64(1.1333333333333333)], 'home_team_avg_goals_10': [np.float64(1.3)], 'away_team_avg_goals_10': [np.float64(0.8)], 'home_team_wins': [np.float64(3.0)], 'home_team_losses': [np.float64(1.0)], 'away_team_wins': [np.float64(1.0)], 'away_team_losses': [np.float64(1.0)], 'last_5_home_wins': [0], 'last_5_away_wins': [3], 'last_5_draws': [0], 'year': [2025], 'month': [3], 'day': [20]}
+2025-03-03 19:19:03,045 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'home_team'. Заменено на 'unknown'.
+2025-03-03 19:19:03,046 WARNING match_predictor Найдена новая категория 'Hungary' для признака 'away_team'. Заменено на 'unknown'.
+2025-03-03 19:19:03,047 WARNING match_predictor Найдена новая категория 'UEFA Nations League' для признака 'tournament'. Заменено на 'unknown'.
+2025-03-03 19:19:03,047 WARNING match_predictor Найдена новая категория 'Istanbul' для признака 'city'. Заменено на 'unknown'.
+2025-03-03 19:19:03,049 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'country'. Заменено на 'unknown'.
+2025-03-03 19:19:03,049 INFO match_predictor Ожидаемые признаки модели: ['home_team' 'away_team' 'tournament' 'city' 'country' 'neutral'
+ 'home_team_wins' 'home_team_losses' 'away_team_wins' 'away_team_losses'
+ 'home_team_avg_goals' 'away_team_avg_goals' 'home_team_avg_goals_10'
+ 'away_team_avg_goals_10' 'last_5_home_wins' 'last_5_away_wins'
+ 'last_5_draws']
+2025-03-03 19:19:03,060 INFO match_predictor Предсказанное значение: away_win
+2025-03-03 19:19:03,528 INFO match_predictor Начало предсказания исхода матча.
+2025-03-03 19:19:03,528 INFO match_predictor Проверяем данные для команды: Turkey, Hungary
+2025-03-03 19:19:03,538 INFO match_predictor Данные для домашней команды:              date    home_team   away_team  home_score  away_score  \
+38539  2015-03-28  Netherlands      Turkey           1           1   
+38583  2015-03-31   Luxembourg      Turkey           1           2   
+38688  2015-06-08       Turkey    Bulgaria           4           0   
+38728  2015-06-12   Kazakhstan      Turkey           0           1   
+38968  2015-09-03       Turkey      Latvia           1           1   
+...           ...          ...         ...         ...         ...   
+47562  2024-09-09       Turkey     Iceland           3           1   
+47689  2024-10-11       Turkey  Montenegro           1           0   
+47745  2024-10-14      Iceland      Turkey           2           4   
+47861  2024-11-16       Turkey       Wales           0           0   
+47908  2024-11-19   Montenegro      Turkey           3           1   
+
+                    tournament        city      country  neutral  \
+38539  UEFA Euro qualification   Amsterdam  Netherlands    False   
+38583                 Friendly  Luxembourg   Luxembourg    False   
+38688                 Friendly    Istanbul       Turkey    False   
+38728  UEFA Euro qualification      Almaty   Kazakhstan    False   
+38968  UEFA Euro qualification       Konya       Turkey    False   
+...                        ...         ...          ...      ...   
+47562      UEFA Nations League       Izmir       Turkey    False   
+47689      UEFA Nations League    Tekkek\xf6y       Turkey    False   
+47745      UEFA Nations League   Reykjav\xedk      Iceland    False   
+47861      UEFA Nations League     Kayseri       Turkey    False   
+47908      UEFA Nations League   Podgorica   Montenegro    False   
+
+       home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38539                 1.00  ...                1.000000      draw   
+38583                 1.00  ...                1.500000  away_win   
+38688                 4.00  ...                0.000000  home_win   
+38728                 0.25  ...                1.333333  away_win   
+38968                 2.50  ...                1.000000      draw   
+...                    ...  ...                     ...       ...   
+47562                 2.20  ...                1.300000  home_win   
+47689                 2.20  ...                0.800000  home_win   
+47745                 2.20  ...                1.200000  away_win   
+47861                 1.40  ...                0.900000      draw   
+47908                 1.20  ...                1.200000  home_win   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38539             0.0              0.0             0.0               0.0   
+38583             0.0              1.0             1.0               0.0   
+38688             1.0              0.0             0.0               1.0   
+38728             0.0              2.0             2.0               0.0   
+38968             1.0              0.0             0.0               0.0   
+...               ...              ...             ...               ...   
+47562             3.0              1.0             2.0               3.0   
+47689             4.0              1.0             0.0               5.0   
+47745             2.0              1.0             3.0               1.0   
+47861             3.0              1.0             1.0               1.0   
+47908             2.0              3.0             2.0               2.0   
+
+                                 last_5_results  last_5_home_wins  \
+38539                    home_win,home_win,draw                 2   
+38583                         away_win,away_win                 0   
+38688                                  home_win                 1   
+38728                                  away_win                 0   
+38968                        home_win,draw,draw                 1   
+...                                         ...               ...   
+47562  home_win,draw,away_win,away_win,away_win                 1   
+47689      home_win,home_win,draw,draw,home_win                 3   
+47745  away_win,away_win,draw,home_win,home_win                 2   
+47861          draw,draw,draw,home_win,away_win                 1   
+47908      home_win,away_win,away_win,draw,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38539                0             1  
+38583                2             0  
+38688                0             0  
+38728                1             0  
+38968                0             2  
+...                ...           ...  
+47562                3             1  
+47689                0             2  
+47745                2             1  
+47861                1             3  
+47908                2             2  
+
+[115 rows x 22 columns]
+2025-03-03 19:19:03,546 INFO match_predictor Данные для гостевой команды:              date               home_team               away_team  home_score  \
+38551  2015-03-29                 Hungary                  Greece           0   
+38655  2015-06-05                 Hungary               Lithuania           4   
+38747  2015-06-13                 Finland                 Hungary           0   
+38981  2015-09-04                 Hungary                 Romania           0   
+39043  2015-09-07        Northern Ireland                 Hungary           1   
+...           ...                     ...                     ...         ...   
+47595  2024-09-10                 Hungary  Bosnia and Herzegovina           0   
+47685  2024-10-11                 Hungary             Netherlands           1   
+47741  2024-10-14  Bosnia and Herzegovina                 Hungary           0   
+47857  2024-11-16             Netherlands                 Hungary           4   
+47904  2024-11-19                 Hungary                 Germany           1   
+
+       away_score               tournament       city                 country  \
+38551           0  UEFA Euro qualification   Budapest                 Hungary   
+38655           0                 Friendly   Debrecen                 Hungary   
+38747           1  UEFA Euro qualification   Helsinki                 Finland   
+38981           0  UEFA Euro qualification   Budapest                 Hungary   
+39043           1  UEFA Euro qualification    Belfast        Northern Ireland   
+...           ...                      ...        ...                     ...   
+47595           0      UEFA Nations League   Budapest                 Hungary   
+47685           1      UEFA Nations League   Budapest                 Hungary   
+47741           2      UEFA Nations League     Zenica  Bosnia and Herzegovina   
+47857           0      UEFA Nations League  Amsterdam             Netherlands   
+47904           1      UEFA Nations League   Budapest                 Hungary   
+
+       neutral  home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38551    False             0.000000  ...                     0.0      draw   
+38655    False             2.000000  ...                     0.0  home_win   
+38747    False             0.333333  ...                     1.0  away_win   
+38981    False             1.333333  ...                     0.0      draw   
+39043    False             1.000000  ...                     1.0      draw   
+...        ...                  ...  ...                     ...       ...   
+47595    False             1.400000  ...                     0.6      draw   
+47685    False             1.400000  ...                     2.0      draw   
+47741    False             0.600000  ...                     1.2  away_win   
+47857    False             2.800000  ...                     1.0  home_win   
+47904    False             1.200000  ...                     1.7      draw   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38551             0.0              0.0             0.0               0.0   
+38655             1.0              0.0             0.0               2.0   
+38747             1.0              2.0             1.0               0.0   
+38981             1.0              0.0             0.0               0.0   
+39043             1.0              0.0             1.0               0.0   
+...               ...              ...             ...               ...   
+47595             3.0              1.0             0.0               4.0   
+47685             2.0              1.0             3.0               1.0   
+47741             0.0              5.0             2.0               3.0   
+47857             3.0              1.0             2.0               3.0   
+47904             1.0              1.0             2.0               1.0   
+
+                             last_5_results  last_5_home_wins  \
+38551                home_win,home_win,draw                 2   
+38655                     home_win,home_win                 2   
+38747                     home_win,away_win                 1   
+38981                                  draw                 0   
+39043                         away_win,draw                 0   
+...                                     ...               ...   
+47595                                  draw                 0   
+47685                                  draw                 0   
+47741                         away_win,draw                 0   
+47857                         home_win,draw                 1   
+47904  draw,away_win,away_win,home_win,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38551                0             1  
+38655                0             0  
+38747                1             0  
+38981                0             1  
+39043                1             1  
+...                ...           ...  
+47595                0             1  
+47685                0             1  
+47741                1             1  
+47857                0             1  
+47904                2             2  
+
+[105 rows x 22 columns]
+2025-03-03 19:19:03,547 INFO match_predictor Средние голы домашней команды: 1.5739130434782609
+2025-03-03 19:19:03,547 INFO match_predictor Средние голы гостевой команды: 1.1333333333333333
+2025-03-03 19:19:03,548 INFO match_predictor Средние голы домашней команды за последние 10 матчей: 1.3
+2025-03-03 19:19:03,548 INFO match_predictor Средние голы гостевой команды за последние 10 матчей: 0.8
+2025-03-03 19:19:03,553 INFO match_predictor Результаты последних 5 матчей между Turkey и Hungary: ['away_win', 'away_win', 'away_win']
+2025-03-03 19:19:03,553 INFO match_predictor Победы домашней команды в последних 5 матчах: 0
+2025-03-03 19:19:03,553 INFO match_predictor Победы гостевой команды в последних 5 матчах: 3
+2025-03-03 19:19:03,553 INFO match_predictor Ничьи в последних 5 матчах: 0
+2025-03-03 19:19:03,554 INFO match_predictor Создан новый DataFrame с данными: {'home_team': ['Turkey'], 'away_team': ['Hungary'], 'tournament': ['UEFA Nations League'], 'city': ['Istanbul'], 'country': ['Turkey'], 'neutral': [False], 'home_team_avg_goals': [np.float64(1.5739130434782609)], 'away_team_avg_goals': [np.float64(1.1333333333333333)], 'home_team_avg_goals_10': [np.float64(1.3)], 'away_team_avg_goals_10': [np.float64(0.8)], 'home_team_wins': [np.float64(3.0)], 'home_team_losses': [np.float64(1.0)], 'away_team_wins': [np.float64(1.0)], 'away_team_losses': [np.float64(1.0)], 'last_5_home_wins': [0], 'last_5_away_wins': [3], 'last_5_draws': [0], 'year': [2025], 'month': [3], 'day': [20]}
+2025-03-03 19:19:03,555 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'home_team'. Заменено на 'unknown'.
+2025-03-03 19:19:03,556 WARNING match_predictor Найдена новая категория 'Hungary' для признака 'away_team'. Заменено на 'unknown'.
+2025-03-03 19:19:03,557 WARNING match_predictor Найдена новая категория 'UEFA Nations League' для признака 'tournament'. Заменено на 'unknown'.
+2025-03-03 19:19:03,559 WARNING match_predictor Найдена новая категория 'Istanbul' для признака 'city'. Заменено на 'unknown'.
+2025-03-03 19:19:03,562 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'country'. Заменено на 'unknown'.
+2025-03-03 19:19:03,563 INFO match_predictor Ожидаемые признаки модели: ['home_team', 'away_team', 'tournament', 'city', 'country', 'neutral', 'home_team_wins', 'home_team_losses', 'away_team_wins', 'away_team_losses', 'home_team_avg_goals', 'away_team_avg_goals', 'home_team_avg_goals_10', 'away_team_avg_goals_10', 'last_5_home_wins', 'last_5_away_wins', 'last_5_draws']
+2025-03-03 19:19:03,567 INFO match_predictor Предсказанное значение: away_win
+2025-03-03 19:19:04,339 INFO match_predictor Начало предсказания исхода матча.
+2025-03-03 19:19:04,339 INFO match_predictor Проверяем данные для команды: Turkey, Hungary
+2025-03-03 19:19:04,347 INFO match_predictor Данные для домашней команды:              date    home_team   away_team  home_score  away_score  \
+38539  2015-03-28  Netherlands      Turkey           1           1   
+38583  2015-03-31   Luxembourg      Turkey           1           2   
+38688  2015-06-08       Turkey    Bulgaria           4           0   
+38728  2015-06-12   Kazakhstan      Turkey           0           1   
+38968  2015-09-03       Turkey      Latvia           1           1   
+...           ...          ...         ...         ...         ...   
+47562  2024-09-09       Turkey     Iceland           3           1   
+47689  2024-10-11       Turkey  Montenegro           1           0   
+47745  2024-10-14      Iceland      Turkey           2           4   
+47861  2024-11-16       Turkey       Wales           0           0   
+47908  2024-11-19   Montenegro      Turkey           3           1   
+
+                    tournament        city      country  neutral  \
+38539  UEFA Euro qualification   Amsterdam  Netherlands    False   
+38583                 Friendly  Luxembourg   Luxembourg    False   
+38688                 Friendly    Istanbul       Turkey    False   
+38728  UEFA Euro qualification      Almaty   Kazakhstan    False   
+38968  UEFA Euro qualification       Konya       Turkey    False   
+...                        ...         ...          ...      ...   
+47562      UEFA Nations League       Izmir       Turkey    False   
+47689      UEFA Nations League    Tekkek\xf6y       Turkey    False   
+47745      UEFA Nations League   Reykjav\xedk      Iceland    False   
+47861      UEFA Nations League     Kayseri       Turkey    False   
+47908      UEFA Nations League   Podgorica   Montenegro    False   
+
+       home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38539                 1.00  ...                1.000000      draw   
+38583                 1.00  ...                1.500000  away_win   
+38688                 4.00  ...                0.000000  home_win   
+38728                 0.25  ...                1.333333  away_win   
+38968                 2.50  ...                1.000000      draw   
+...                    ...  ...                     ...       ...   
+47562                 2.20  ...                1.300000  home_win   
+47689                 2.20  ...                0.800000  home_win   
+47745                 2.20  ...                1.200000  away_win   
+47861                 1.40  ...                0.900000      draw   
+47908                 1.20  ...                1.200000  home_win   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38539             0.0              0.0             0.0               0.0   
+38583             0.0              1.0             1.0               0.0   
+38688             1.0              0.0             0.0               1.0   
+38728             0.0              2.0             2.0               0.0   
+38968             1.0              0.0             0.0               0.0   
+...               ...              ...             ...               ...   
+47562             3.0              1.0             2.0               3.0   
+47689             4.0              1.0             0.0               5.0   
+47745             2.0              1.0             3.0               1.0   
+47861             3.0              1.0             1.0               1.0   
+47908             2.0              3.0             2.0               2.0   
+
+                                 last_5_results  last_5_home_wins  \
+38539                    home_win,home_win,draw                 2   
+38583                         away_win,away_win                 0   
+38688                                  home_win                 1   
+38728                                  away_win                 0   
+38968                        home_win,draw,draw                 1   
+...                                         ...               ...   
+47562  home_win,draw,away_win,away_win,away_win                 1   
+47689      home_win,home_win,draw,draw,home_win                 3   
+47745  away_win,away_win,draw,home_win,home_win                 2   
+47861          draw,draw,draw,home_win,away_win                 1   
+47908      home_win,away_win,away_win,draw,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38539                0             1  
+38583                2             0  
+38688                0             0  
+38728                1             0  
+38968                0             2  
+...                ...           ...  
+47562                3             1  
+47689                0             2  
+47745                2             1  
+47861                1             3  
+47908                2             2  
+
+[115 rows x 22 columns]
+2025-03-03 19:19:04,351 INFO match_predictor Данные для гостевой команды:              date               home_team               away_team  home_score  \
+38551  2015-03-29                 Hungary                  Greece           0   
+38655  2015-06-05                 Hungary               Lithuania           4   
+38747  2015-06-13                 Finland                 Hungary           0   
+38981  2015-09-04                 Hungary                 Romania           0   
+39043  2015-09-07        Northern Ireland                 Hungary           1   
+...           ...                     ...                     ...         ...   
+47595  2024-09-10                 Hungary  Bosnia and Herzegovina           0   
+47685  2024-10-11                 Hungary             Netherlands           1   
+47741  2024-10-14  Bosnia and Herzegovina                 Hungary           0   
+47857  2024-11-16             Netherlands                 Hungary           4   
+47904  2024-11-19                 Hungary                 Germany           1   
+
+       away_score               tournament       city                 country  \
+38551           0  UEFA Euro qualification   Budapest                 Hungary   
+38655           0                 Friendly   Debrecen                 Hungary   
+38747           1  UEFA Euro qualification   Helsinki                 Finland   
+38981           0  UEFA Euro qualification   Budapest                 Hungary   
+39043           1  UEFA Euro qualification    Belfast        Northern Ireland   
+...           ...                      ...        ...                     ...   
+47595           0      UEFA Nations League   Budapest                 Hungary   
+47685           1      UEFA Nations League   Budapest                 Hungary   
+47741           2      UEFA Nations League     Zenica  Bosnia and Herzegovina   
+47857           0      UEFA Nations League  Amsterdam             Netherlands   
+47904           1      UEFA Nations League   Budapest                 Hungary   
+
+       neutral  home_team_avg_goals  ...  away_team_avg_goals_10   outcome  \
+38551    False             0.000000  ...                     0.0      draw   
+38655    False             2.000000  ...                     0.0  home_win   
+38747    False             0.333333  ...                     1.0  away_win   
+38981    False             1.333333  ...                     0.0      draw   
+39043    False             1.000000  ...                     1.0      draw   
+...        ...                  ...  ...                     ...       ...   
+47595    False             1.400000  ...                     0.6      draw   
+47685    False             1.400000  ...                     2.0      draw   
+47741    False             0.600000  ...                     1.2  away_win   
+47857    False             2.800000  ...                     1.0  home_win   
+47904    False             1.200000  ...                     1.7      draw   
+
+       home_team_wins home_team_losses  away_team_wins  away_team_losses  \
+38551             0.0              0.0             0.0               0.0   
+38655             1.0              0.0             0.0               2.0   
+38747             1.0              2.0             1.0               0.0   
+38981             1.0              0.0             0.0               0.0   
+39043             1.0              0.0             1.0               0.0   
+...               ...              ...             ...               ...   
+47595             3.0              1.0             0.0               4.0   
+47685             2.0              1.0             3.0               1.0   
+47741             0.0              5.0             2.0               3.0   
+47857             3.0              1.0             2.0               3.0   
+47904             1.0              1.0             2.0               1.0   
+
+                             last_5_results  last_5_home_wins  \
+38551                home_win,home_win,draw                 2   
+38655                     home_win,home_win                 2   
+38747                     home_win,away_win                 1   
+38981                                  draw                 0   
+39043                         away_win,draw                 0   
+...                                     ...               ...   
+47595                                  draw                 0   
+47685                                  draw                 0   
+47741                         away_win,draw                 0   
+47857                         home_win,draw                 1   
+47904  draw,away_win,away_win,home_win,draw                 1   
+
+      last_5_away_wins  last_5_draws  
+38551                0             1  
+38655                0             0  
+38747                1             0  
+38981                0             1  
+39043                1             1  
+...                ...           ...  
+47595                0             1  
+47685                0             1  
+47741                1             1  
+47857                0             1  
+47904                2             2  
+
+[105 rows x 22 columns]
+2025-03-03 19:19:04,351 INFO match_predictor Средние голы домашней команды: 1.5739130434782609
+2025-03-03 19:19:04,351 INFO match_predictor Средние голы гостевой команды: 1.1333333333333333
+2025-03-03 19:19:04,352 INFO match_predictor Средние голы домашней команды за последние 10 матчей: 1.3
+2025-03-03 19:19:04,352 INFO match_predictor Средние голы гостевой команды за последние 10 матчей: 0.8
+2025-03-03 19:19:04,355 INFO match_predictor Результаты последних 5 матчей между Turkey и Hungary: ['away_win', 'away_win', 'away_win']
+2025-03-03 19:19:04,355 INFO match_predictor Победы домашней команды в последних 5 матчах: 0
+2025-03-03 19:19:04,355 INFO match_predictor Победы гостевой команды в последних 5 матчах: 3
+2025-03-03 19:19:04,355 INFO match_predictor Ничьи в последних 5 матчах: 0
+2025-03-03 19:19:04,356 INFO match_predictor Создан новый DataFrame с данными: {'home_team': ['Turkey'], 'away_team': ['Hungary'], 'tournament': ['UEFA Nations League'], 'city': ['Istanbul'], 'country': ['Turkey'], 'neutral': [False], 'home_team_avg_goals': [np.float64(1.5739130434782609)], 'away_team_avg_goals': [np.float64(1.1333333333333333)], 'home_team_avg_goals_10': [np.float64(1.3)], 'away_team_avg_goals_10': [np.float64(0.8)], 'home_team_wins': [np.float64(3.0)], 'home_team_losses': [np.float64(1.0)], 'away_team_wins': [np.float64(1.0)], 'away_team_losses': [np.float64(1.0)], 'last_5_home_wins': [0], 'last_5_away_wins': [3], 'last_5_draws': [0], 'year': [2025], 'month': [3], 'day': [20]}
+2025-03-03 19:19:04,357 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'home_team'. Заменено на 'unknown'.
+2025-03-03 19:19:04,359 WARNING match_predictor Найдена новая категория 'Hungary' для признака 'away_team'. Заменено на 'unknown'.
+2025-03-03 19:19:04,360 WARNING match_predictor Найдена новая категория 'UEFA Nations League' для признака 'tournament'. Заменено на 'unknown'.
+2025-03-03 19:19:04,362 WARNING match_predictor Найдена новая категория 'Istanbul' для признака 'city'. Заменено на 'unknown'.
+2025-03-03 19:19:04,363 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'country'. Заменено на 'unknown'.
+2025-03-03 19:19:04,364 INFO match_predictor Ожидаемые признаки модели: ['home_team' 'away_team' 'tournament' 'city' 'country' 'neutral'
+ 'home_team_wins' 'home_team_losses' 'away_team_wins' 'away_team_losses'
+ 'home_team_avg_goals' 'away_team_avg_goals' 'home_team_avg_goals_10'
+ 'away_team_avg_goals_10' 'last_5_home_wins' 'last_5_away_wins'
+ 'last_5_draws']
+2025-03-03 19:19:04,368 INFO match_predictor Предсказанное значение: away_win
+2025-03-03 19:19:05,101 INFO match_predictor Начало предсказания исхода матча.
+2025-03-03 19:19:05,101 INFO match_predictor Проверяем данные для команды: Turkey, Hungary
+2025-03-03 19:19:05,105 INFO match_predictor Данные для домашней команды: Empty DataFrame
+Columns: [date, home_team, away_team, home_score, away_score, tournament, city, country, neutral, home_team_avg_goals, away_team_avg_goals, home_team_avg_goals_10, away_team_avg_goals_10, outcome, home_team_wins, home_team_losses, away_team_wins, away_team_losses, last_5_results, last_5_home_wins, last_5_away_wins, last_5_draws, year, month, day]
+Index: []
+
+[0 rows x 25 columns]
+2025-03-03 19:19:05,106 INFO match_predictor Данные для гостевой команды: Empty DataFrame
+Columns: [date, home_team, away_team, home_score, away_score, tournament, city, country, neutral, home_team_avg_goals, away_team_avg_goals, home_team_avg_goals_10, away_team_avg_goals_10, outcome, home_team_wins, home_team_losses, away_team_wins, away_team_losses, last_5_results, last_5_home_wins, last_5_away_wins, last_5_draws, year, month, day]
+Index: []
+
+[0 rows x 25 columns]
+2025-03-03 19:19:05,106 INFO match_predictor Средние голы домашней команды: nan
+2025-03-03 19:19:05,106 INFO match_predictor Средние голы гостевой команды: nan
+2025-03-03 19:19:05,107 WARNING match_predictor Нет данных для Turkey. Используем общее среднее: 1.60894901144641
+2025-03-03 19:19:05,107 WARNING match_predictor Нет данных для Hungary. Используем общее среднее: 1.1067637877211238
+2025-03-03 19:19:05,107 INFO match_predictor Средние голы домашней команды за последние 10 матчей: 1.60894901144641
+2025-03-03 19:19:05,107 INFO match_predictor Средние голы гостевой команды за последние 10 матчей: 1.1067637877211238
+2025-03-03 19:19:05,107 WARNING match_predictor Нет данных для расчета побед и поражений домашней команды: Turkey
+2025-03-03 19:19:05,107 WARNING match_predictor Нет данных для расчета побед и поражений гостевой команды: Hungary
+2025-03-03 19:19:05,109 INFO match_predictor Результаты последних 5 матчей между Turkey и Hungary: []
+2025-03-03 19:19:05,109 INFO match_predictor Победы домашней команды в последних 5 матчах: 0
+2025-03-03 19:19:05,109 INFO match_predictor Победы гостевой команды в последних 5 матчах: 0
+2025-03-03 19:19:05,109 INFO match_predictor Ничьи в последних 5 матчах: 0
+2025-03-03 19:19:05,110 INFO match_predictor Создан новый DataFrame с данными: {'home_team': ['Turkey'], 'away_team': ['Hungary'], 'tournament': ['UEFA Nations League'], 'city': ['Istanbul'], 'country': ['Turkey'], 'neutral': [False], 'home_team_avg_goals': [np.float64(1.60894901144641)], 'away_team_avg_goals': [np.float64(1.1067637877211238)], 'home_team_avg_goals_10': [np.float64(1.60894901144641)], 'away_team_avg_goals_10': [np.float64(1.1067637877211238)], 'home_team_wins': [0], 'home_team_losses': [0], 'away_team_wins': [0], 'away_team_losses': [0], 'last_5_home_wins': [0], 'last_5_away_wins': [0], 'last_5_draws': [0], 'year': [2025], 'month': [3], 'day': [20]}
+2025-03-03 19:19:05,111 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'home_team'. Заменено на 'unknown'.
+2025-03-03 19:19:05,113 WARNING match_predictor Найдена новая категория 'Hungary' для признака 'away_team'. Заменено на 'unknown'.
+2025-03-03 19:19:05,114 WARNING match_predictor Найдена новая категория 'UEFA Nations League' для признака 'tournament'. Заменено на 'unknown'.
+2025-03-03 19:19:05,115 WARNING match_predictor Найдена новая категория 'Istanbul' для признака 'city'. Заменено на 'unknown'.
+2025-03-03 19:19:05,118 WARNING match_predictor Найдена новая категория 'Turkey' для признака 'country'. Заменено на 'unknown'.
+2025-03-03 19:19:05,119 INFO match_predictor Ожидаемые признаки модели: ['home_team' 'away_team' 'tournament' 'city' 'country' 'neutral'
+ 'home_team_wins' 'home_team_losses' 'away_team_wins' 'away_team_losses'
+ 'home_team_avg_goals' 'away_team_avg_goals' 'home_team_avg_goals_10'
+ 'away_team_avg_goals_10' 'last_5_home_wins' 'last_5_away_wins'
+ 'last_5_draws']
+2025-03-03 19:19:05,127 INFO match_predictor Предсказанное значение: 1
