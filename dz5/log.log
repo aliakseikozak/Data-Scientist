@@ -1,0 +1,143 @@
+2025-03-10 19:25:55,034 INFO data_loader Started modul DataLoader
+2025-03-10 19:26:21,019 INFO data_loader Данные успешно загружены
+2025-03-10 19:29:27,319 INFO data_loader Данные успешно загружены
+2025-03-10 19:43:51,436 INFO data_loader Started modul DataLoader
+2025-03-10 19:43:52,173 INFO data_loader Данные успешно загружены
+2025-03-10 19:43:57,951 INFO data_loader Данные успешно загружены
+2025-03-10 19:45:52,396 INFO data_loader Started modul DataLoader
+2025-03-10 19:45:53,125 INFO data_loader Данные успешно загружены
+2025-03-10 19:47:09,047 INFO data_loader Started modul DataLoader
+2025-03-10 19:47:09,705 INFO data_loader Данные успешно загружены
+2025-03-10 19:47:55,306 INFO data_loader Started modul DataLoader
+2025-03-10 19:47:55,965 INFO data_loader Данные успешно загружены
+2025-03-10 19:48:15,187 INFO data_loader Started modul DataLoader
+2025-03-10 19:48:15,965 INFO data_loader Данные успешно загружены
+2025-03-10 19:49:51,081 INFO data_loader Started modul DataLoader
+2025-03-10 19:49:51,757 INFO data_loader Данные успешно загружены
+2025-03-10 19:52:04,059 INFO data_loader Started modul DataLoader
+2025-03-10 19:52:04,760 INFO data_loader Данные успешно загружены
+2025-03-10 19:52:17,868 INFO data_loader Started modul DataLoader
+2025-03-10 19:52:18,567 INFO data_loader Данные успешно загружены
+2025-03-10 19:54:35,301 INFO data_loader Started modul DataLoader
+2025-03-10 19:54:35,943 INFO data_loader Данные успешно загружены
+2025-03-10 19:55:33,121 INFO data_loader Started modul DataLoader
+2025-03-10 19:55:33,809 INFO data_loader Данные успешно загружены
+2025-03-10 20:02:27,540 INFO data_loader Started modul DataLoader
+2025-03-10 20:02:28,244 INFO data_loader Данные успешно загружены
+2025-03-10 20:02:53,659 INFO data_loader Started modul DataLoader
+2025-03-10 20:02:54,346 INFO data_loader Данные успешно загружены
+2025-03-10 20:02:55,449 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:02:55,454 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:03:01,827 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:03:01,833 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:06:28,501 INFO data_loader Started modul DataLoader
+2025-03-10 20:06:29,187 INFO data_loader Данные успешно загружены
+2025-03-10 20:06:30,306 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:06:30,312 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:34,770 INFO data_loader Started modul DataLoader
+2025-03-10 20:09:35,691 INFO data_loader Данные успешно загружены
+2025-03-10 20:09:37,086 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:37,099 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:42,092 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:42,098 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:45,504 INFO data_loader Данные успешно загружены
+2025-03-10 20:09:46,693 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:46,699 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:50,173 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:09:50,181 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:11:28,450 INFO data_loader Started modul DataLoader
+2025-03-10 20:11:29,280 INFO data_loader Данные успешно загружены
+2025-03-10 20:11:30,512 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:11:30,522 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:11:36,834 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:11:36,845 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:13:12,386 INFO data_loader Started modul DataLoader
+2025-03-10 20:13:13,075 INFO data_loader Данные успешно загружены
+2025-03-10 20:13:13,809 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:13:13,815 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:13:16,288 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:13:16,297 INFO category Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-03-10 20:13:42,660 INFO data_loader Данные успешно загружены
+2025-03-10 20:19:56,553 INFO data_loader Started modul DataLoader
+2025-03-10 20:19:57,248 INFO data_loader Данные успешно загружены
+2025-03-10 20:24:05,263 INFO data_loader Started modul DataLoader
+2025-03-10 20:24:38,411 INFO data_loader Данные успешно загружены
+2025-03-10 20:29:59,950 INFO data_loader Started modul DataLoader
+2025-03-10 20:30:00,842 INFO data_loader Данные успешно загружены
+2025-03-10 20:38:08,797 INFO data_loader Started modul DataLoader
+2025-03-10 20:38:09,796 INFO data_loader Данные успешно загружены
+2025-03-10 20:38:43,280 INFO data_loader Started modul DataLoader
+2025-03-10 20:38:44,144 INFO data_loader Данные успешно загружены
+2025-03-10 20:40:23,956 INFO data_loader Данные успешно загружены
+2025-03-10 20:40:25,463 INFO data_loader Данные успешно загружены
+2025-03-10 20:40:26,157 INFO data_loader Данные успешно загружены
+2025-03-10 20:40:34,314 INFO data_loader Started modul DataLoader
+2025-03-10 20:40:35,457 INFO data_loader Данные успешно загружены
+2025-03-10 20:43:07,573 INFO data_loader Started modul DataLoader
+2025-03-10 20:43:08,673 INFO data_loader Данные успешно загружены
+2025-03-10 20:55:08,500 INFO data_loader Started modul DataLoader
+2025-03-10 20:55:09,372 INFO data_loader Данные успешно загружены
+2025-03-10 20:57:33,341 INFO data_loader Started modul DataLoader
+2025-03-10 20:57:34,294 INFO data_loader Данные успешно загружены
+2025-03-10 21:01:01,940 INFO data_loader Started modul DataLoader
+2025-03-10 21:01:03,074 INFO data_loader Данные успешно загружены
+2025-03-10 21:03:30,664 INFO data_loader Started modul DataLoader
+2025-03-10 21:03:31,513 INFO data_loader Данные успешно загружены
+2025-03-10 21:04:52,172 INFO data_loader Started modul DataLoader
+2025-03-10 21:04:53,205 INFO data_loader Данные успешно загружены
+2025-03-10 21:07:35,907 INFO data_loader Started modul DataLoader
+2025-03-10 21:07:36,845 INFO data_loader Данные успешно загружены
+2025-03-10 21:32:51,211 INFO data_loader Started modul DataLoader
+2025-03-10 21:32:52,365 INFO data_loader Данные успешно загружены
+2025-03-10 21:34:32,153 INFO data_loader Started modul DataLoader
+2025-03-10 21:34:33,337 INFO data_loader Данные успешно загружены
+2025-03-10 21:35:37,730 INFO data_loader Started modul DataLoader
+2025-03-10 21:35:38,563 INFO data_loader Данные успешно загружены
+2025-03-10 21:38:25,921 INFO data_loader Started modul DataLoader
+2025-03-10 21:38:26,930 INFO data_loader Данные успешно загружены
+2025-03-10 21:40:02,606 INFO data_loader Started modul DataLoader
+2025-03-10 21:40:03,573 INFO data_loader Данные успешно загружены
+2025-03-10 21:41:33,917 INFO data_loader Started modul DataLoader
+2025-03-10 21:41:34,749 INFO data_loader Данные успешно загружены
+2025-03-10 21:48:29,803 INFO data_loader Started modul DataLoader
+2025-03-10 21:48:30,638 INFO data_loader Данные успешно загружены
+2025-03-10 21:49:39,414 INFO data_loader Started modul DataLoader
+2025-03-10 21:49:40,277 INFO data_loader Данные успешно загружены
+2025-03-10 21:59:11,463 INFO data_loader Started modul DataLoader
+2025-03-10 21:59:12,377 INFO data_loader Данные успешно загружены
+2025-03-12 20:29:27,305 INFO data_loader Started modul DataLoader
+2025-03-12 20:29:43,690 INFO data_loader Данные успешно загружены
+2025-03-12 20:53:09,116 INFO data_loader Started modul DataLoader
+2025-03-12 20:53:11,075 INFO data_loader Данные успешно загружены
+2025-03-12 21:04:20,126 INFO data_loader Started modul DataLoader
+2025-03-12 21:04:21,811 INFO data_loader Данные успешно загружены
+2025-03-12 21:14:20,665 INFO data_loader Started modul DataLoader
+2025-03-12 21:14:22,164 INFO data_loader Данные успешно загружены
+2025-03-12 21:18:26,088 INFO data_loader Started modul DataLoader
+2025-03-12 21:18:27,611 INFO data_loader Данные успешно загружены
+2025-03-12 21:21:01,680 INFO data_loader Данные успешно загружены
+2025-03-12 21:21:03,255 INFO data_loader Данные успешно загружены
+2025-03-12 21:33:43,344 INFO data_loader Started modul DataLoader
+2025-03-12 21:33:44,978 INFO data_loader Данные успешно загружены
+2025-03-12 22:09:06,720 INFO data_loader Started modul DataLoader
+2025-03-12 22:09:07,654 INFO data_loader Данные успешно загружены
+2025-03-12 22:10:03,201 INFO data_loader Started modul DataLoader
+2025-03-12 22:10:04,140 INFO data_loader Данные успешно загружены
+2025-03-12 22:53:16,690 INFO data_loader Started modul DataLoader
+2025-03-12 22:53:19,742 INFO data_loader Данные успешно загружены
+2025-03-12 23:00:15,993 INFO data_loader Started modul DataLoader
+2025-03-12 23:00:16,992 INFO data_loader Данные успешно загружены
+2025-03-12 23:16:13,674 INFO data_loader Started modul DataLoader
+2025-03-12 23:16:14,794 INFO data_loader Данные успешно загружены
+2025-03-12 23:22:49,316 INFO data_loader Started modul DataLoader
+2025-03-12 23:22:50,429 INFO data_loader Данные успешно загружены
+2025-03-12 23:33:20,894 INFO data_loader Started modul DataLoader
+2025-03-12 23:33:21,872 INFO data_loader Данные успешно загружены
+2025-03-12 23:42:36,811 INFO data_loader Started modul DataLoader
+2025-03-12 23:42:37,881 INFO data_loader Данные успешно загружены
+2025-03-12 23:44:21,784 INFO data_loader Данные успешно загружены
+2025-03-12 23:44:29,783 INFO data_loader Данные успешно загружены
+2025-03-12 23:57:52,204 INFO data_loader Started modul DataLoader
+2025-03-12 23:57:53,470 INFO data_loader Данные успешно загружены
+2025-03-13 00:02:40,031 INFO data_loader Started modul DataLoader
+2025-03-13 00:02:41,240 INFO data_loader Данные успешно загружены
