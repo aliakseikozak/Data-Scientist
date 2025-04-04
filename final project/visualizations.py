@@ -159,56 +159,57 @@ def create_team_ratings_comparison(ax, df, top_n=20, min_matches=5):
             transform=ax.transAxes, ha='right', va='top',
             bbox=dict(facecolor='white', alpha=0.8, edgecolor='gray', boxstyle='round')) 
 
-def perform_eda(df, save_path='visualizations/eda_plots.png', ratings_save_path='visualizations/team_ratings.png'):
-    """Основная функция для выполнения EDA и сохранения графиков."""
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
-
+def perform_eda(df, save_dir='visualizations'):
+    """
+    Выполняет EDA анализ с отображением и сохранением графиков.
+    
+    Args:
+        df: DataFrame с данными
+        save_dir: Директория для сохранения графиков
+    """
+    os.makedirs(save_dir, exist_ok=True)
+    
     # Проверка данных
     logger.info("Уникальные значения голов: %s", sorted(df['TotalGoals'].unique()))
     odd_goals = [x for x in df['TotalGoals'].unique() if x % 2 != 0]
     logger.info("Наличие нечётных значений: %s", "Есть" if odd_goals else "Нет")
 
-    # Создаем общую фигуру для первых четырех графиков 2x2
-    plt.figure(figsize=(18, 18))
-    
-    # Создаем графики
-    create_goals_distribution(plt.subplot(3, 2, 1), df)
-    create_results_pie(plt.subplot(3, 2, 2), df)
-    create_correlation_heatmap(plt.subplot(3, 2, 3), df)
-    create_monthly_goals_trend(plt.subplot(3, 2, 4), df)
-
-    # Оставим 5-е и 6-е место пустыми
-    plt.delaxes(plt.subplot(3, 2, 5))
-    plt.delaxes(plt.subplot(3, 2, 6))
-    
-    # Общие настройки
-    plt.suptitle('Анализ футбольных матчей', fontsize=18, y=1.02)
+    # 1. Распределение голов
+    plt.figure(figsize=(10, 6))
+    create_goals_distribution(plt.gca(), df)
     plt.tight_layout()
-    
-    # Сохранение первых четырех графиков
-    try:
-        plt.savefig(save_path, dpi=120, bbox_inches='tight')
-        logger.info("Графики сохранены в %s", save_path)
-    except Exception as e:
-        logger.error(f"Ошибка сохранения: {e}")
-        raise
-    
+    plt.savefig(os.path.join(save_dir, 'goals_distribution.png'), dpi=120, bbox_inches='tight')
     plt.show()
-
-    # Создаем отдельный график для сравнений команд
-    plt.figure(figsize=(12, 8))  # Настройте размер по вашему желанию
-    ax = plt.subplot()
-    create_team_ratings_comparison(ax, df)
     
-    # Сохранение графика сравнения команд
-    try:
-        plt.savefig(ratings_save_path, dpi=120, bbox_inches='tight')
-        logger.info("График сравнений команд сохранен в %s", ratings_save_path)
-    except Exception as e:
-        logger.error(f"Ошибка сохранения графика команд: {e}")
-        raise
-    
+    # 2. Круговая диаграмма результатов
+    plt.figure(figsize=(10, 6))
+    create_results_pie(plt.gca(), df)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'results_pie.png'), dpi=120, bbox_inches='tight')
     plt.show()
+    
+    # 3. Тепловая карта корреляций
+    plt.figure(figsize=(12, 8))
+    create_correlation_heatmap(plt.gca(), df)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'correlation_heatmap.png'), dpi=120, bbox_inches='tight')
+    plt.show()
+    
+    # 4. Тренд голов по месяцам
+    plt.figure(figsize=(14, 6))
+    create_monthly_goals_trend(plt.gca(), df)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'monthly_goals_trend.png'), dpi=120, bbox_inches='tight')
+    plt.show()
+    
+    # 5. Сравнение рейтингов команд
+    plt.figure(figsize=(12, 8))
+    create_team_ratings_comparison(plt.gca(), df)
+    plt.tight_layout()
+    plt.savefig(os.path.join(save_dir, 'team_ratings_comparison.png'), dpi=120, bbox_inches='tight')
+    plt.show()
+    
+    logger.info("Все графики сохранены в директорию %s и отображены на экране", save_dir)
 
 
 def plot_model_comparison(models_comparison: pd.DataFrame) -> plt.Figure:
